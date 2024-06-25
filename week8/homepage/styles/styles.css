@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(58, 58, 58);
+}
+
+#nave {
+  color: rgb(51, 151, 239);
+}
+
+.container-sm {
+  margin: 2% auto;
+  width: 1200px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.661);
+  box-shadow: 20px 20px 70px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  outline: rgba(0, 0, 0, 0.499) solid 3px;
+}
+
+#vajeksa {
+  width: 400px;
+}
+
+.image img {
+  margin: auto;
+  display: block;
+}
+
+figcaption {
+  font-size: large;
+  font-weight: 700;
+}

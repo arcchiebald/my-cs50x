@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: There is a major difference betweeen lower and upper bounds of required steps to complete the sort execution.
+
+sort2 uses: Merge Sort
+
+How do you know?: This sort program was the fastest one in all three categories of files.
+
+sort3 uses: Selection Sort
+
+How do you know?: It took much longer to sort already sorted file, than program 1(Bubble sort) did. Also, reversed(hardest) and sorted(easiest) lists took almost exact time to sort, so we can say, that lower and upper bounds of the program execution steps are nearly the same, thus I decided, that it is selection sort.

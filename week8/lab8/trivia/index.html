@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Trivia!</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // TODO: Add code to check answers to questions
+        // User clicked on the correct button.
+        let correct = document.querySelector(".cr");
+        correct.addEventListener("click", function () {
+          correct.style.backgroundColor = "#00ed00";
+          document.getElementById("fb1").innerHTML = "Correct!";
+        });
+
+        // User clicked on the wrong button.
+        let wrong = document.querySelectorAll(".wr");
+        for (let i = 0; i < wrong.length; i++) {
+          wrong[i].addEventListener("click", function () {
+            wrong[i].style.backgroundColor = "#fd0000";
+            document.getElementById("fb1").innerHTML = "Incorrect!";
+          });
+        }
+
+        // Second part!
+        let field = document.querySelector("#inp");
+        let check = document.querySelector("#chk");
+        check.addEventListener("click", function () {
+          if (field.value === "Messi" || field.value === "Lionel Messi") {
+            field.style.backgroundColor = "#00cc00";
+            document.getElementById("fb2").innerHTML = "Correct!";
+          } else {
+            field.style.backgroundColor = "#fb0000";
+            document.getElementById("fb2").innerHTML = "Inorrect!";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Part 1: Multiple Choice</h2>
+        <hr />
+        <!-- TODO: Add multiple choice question here -->
+        <h3>How many UCL titles has Crisitano Ronaldo?</h3>
+        <h5 id="fb1"></h5>
+        <button class="wr">3</button>
+        <button class="wr">7</button>
+        <button class="cr">5</button>
+        <button class="wr">6</button>
+      </div>
+
+      <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr />
+        <!-- TODO: Add free response question here -->
+        <h3>Who is all-time top-scorer for Argentina?</h3>
+        <input placeholder="Answer" type="text" id="inp" />
+        <button id="chk" type="submit">Check answer</button>
+        <h5 id="fb2"></h5>
+      </div>
+    </div>
+  </body>
+</html>

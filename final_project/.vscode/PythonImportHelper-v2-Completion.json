@@ -1,0 +1,236 @@
+[
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "quadFunc",
+        "importPath": "helpers",
+        "description": "helpers",
+        "isExtraImport": true,
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "linearFunc",
+        "importPath": "helpers",
+        "description": "helpers",
+        "isExtraImport": true,
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "invFunc",
+        "importPath": "helpers",
+        "description": "helpers",
+        "isExtraImport": true,
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "cubicFunc",
+        "importPath": "helpers",
+        "description": "helpers",
+        "isExtraImport": true,
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "grid",
+        "importPath": "helpers",
+        "description": "helpers",
+        "isExtraImport": true,
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "promptParam",
+        "importPath": "helpers",
+        "description": "helpers",
+        "isExtraImport": true,
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "sympy",
+        "description": "sympy",
+        "isExtraImport": true,
+        "detail": "sympy",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "PySimpleGUI",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PySimpleGUI",
+        "description": "PySimpleGUI",
+        "detail": "PySimpleGUI",
+        "documentation": {}
+    },
+    {
+        "label": "exit",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "exit",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "selectedWindow",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "selectedWindow = None\n# ==========================================================================\nlayoutMain = [  \n                [sg.Text(\"Welcome to Archil's graph plotter!\")],\n                [sg.Text(\"Please, select a function:\")],\n                [sg.Button(\"Quadratic\\n y=ax²+bx+c\", key=\"quad\", size=(17,2)), sg.Button(\"Linear\\n y=kx+b\", key=\"linear\", size=(17,2))],\n                [sg.Button(\"Inverse variation\\n y=k/x\", key=\"inv\", size=(17,2)), sg.Button(\"Cubic\\n y=ax³\", key=\"cubic\", size=(17,2))]\n             ]\nlayoutQuad = [  \n                [sg.Text(\"Selected: Quadratic Function\")],",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "layoutMain",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "layoutMain = [  \n                [sg.Text(\"Welcome to Archil's graph plotter!\")],\n                [sg.Text(\"Please, select a function:\")],\n                [sg.Button(\"Quadratic\\n y=ax²+bx+c\", key=\"quad\", size=(17,2)), sg.Button(\"Linear\\n y=kx+b\", key=\"linear\", size=(17,2))],\n                [sg.Button(\"Inverse variation\\n y=k/x\", key=\"inv\", size=(17,2)), sg.Button(\"Cubic\\n y=ax³\", key=\"cubic\", size=(17,2))]\n             ]\nlayoutQuad = [  \n                [sg.Text(\"Selected: Quadratic Function\")],\n                [sg.Text(\"y=ax²+bx+c\")],\n                [sg.Text(\"Enter 'a' parameter\"), sg.InputText(size=(10,1), key=\"aQuad\")],",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "layoutQuad",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "layoutQuad = [  \n                [sg.Text(\"Selected: Quadratic Function\")],\n                [sg.Text(\"y=ax²+bx+c\")],\n                [sg.Text(\"Enter 'a' parameter\"), sg.InputText(size=(10,1), key=\"aQuad\")],\n                [sg.Text(\"Enter 'b' parameter\"), sg.InputText(size=(10,1), key=\"bQuad\")],\n                [sg.Text(\"Enter 'c' parameter\"), sg.InputText(size=(10,1), key=\"cQuad\")],\n                [sg.Button(\"Submit\"), sg.Button(\"Cancel\")]\n             ]\nlayoutLinear = [  \n                [sg.Text(\"Selected: Linear Function\")],",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "layoutLinear",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "layoutLinear = [  \n                [sg.Text(\"Selected: Linear Function\")],\n                [sg.Text(\"y=kx+b\")],\n                [sg.Text(\"Enter 'k' parameter\"), sg.InputText(size=(10,1), key=\"kLin\")],\n                [sg.Text(\"Enter 'b' parameter\"), sg.InputText(size=(10,1), key=\"bLin\")],\n                [sg.Button(\"Submit\"), sg.Button(\"Cancel\")]\n             ]\nlayoutInv = [  \n                [sg.Text(\"Selected: Inverse variation\")],\n                [sg.Text(\"y=k/x\")],",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "layoutInv",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "layoutInv = [  \n                [sg.Text(\"Selected: Inverse variation\")],\n                [sg.Text(\"y=k/x\")],\n                [sg.Text(\"Enter 'k' parameter\"), sg.InputText(size=(10,1), key=\"kInv\")],\n                [sg.Button(\"Submit\"), sg.Button(\"Cancel\")]\n             ]\nlayoutCubic = [  \n                [sg.Text(\"Selected: Cubic Function\")],\n                [sg.Text(\"y=ax³\")],\n                [sg.Text(\"Enter 'a' parameter\"), sg.InputText(size=(10,1), key=\"aCub\")],",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "layoutCubic",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "layoutCubic = [  \n                [sg.Text(\"Selected: Cubic Function\")],\n                [sg.Text(\"y=ax³\")],\n                [sg.Text(\"Enter 'a' parameter\"), sg.InputText(size=(10,1), key=\"aCub\")],\n                [sg.Button(\"Submit\"), sg.Button(\"Cancel\")]\n             ]\nwindow = sg.Window(\"Graph Plotter\", layoutMain, finalize=True)\nwindow.move_to_center()\n# Tracking events and values for main menu:\nwhile True:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "window",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "window = sg.Window(\"Graph Plotter\", layoutMain, finalize=True)\nwindow.move_to_center()\n# Tracking events and values for main menu:\nwhile True:\n    event, values = window.read()\n    # If user clicked on 'quadratic function' button:\n    if event == \"quad\":\n        # Close the main window, then create and open new window with inputs necessary for quadFunction, then change selectedWindow variable to quad\n        window.close()\n        windowQuad = sg.Window(\"Graph Plotter: Quadratic\", layoutQuad, finalize=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "grid",
+        "kind": 2,
+        "importPath": "helpers",
+        "description": "helpers",
+        "peekOfCode": "def grid(xmin, xmax, ymin, ymax):\n    # Select length of axes and the space between tick labels\n    xmin, xmax, ymin, ymax = xmin, xmax, ymin, ymax\n    ticks_frequency = 1\n    # Plot points\n    fig, ax = plt.subplots(figsize=(10, 10))\n    # Set identical scales for both axes\n    ax.set(xlim=(xmin-1, xmax+1), ylim=(ymin-1, ymax+1), aspect='equal')\n    # Set bottom and left spines as x and y axes of coordinate system\n    ax.spines['bottom'].set_position('zero')",
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "promptParam",
+        "kind": 2,
+        "importPath": "helpers",
+        "description": "helpers",
+        "peekOfCode": "def promptParam(value):\n    try:\n        if abs(int(value)) > 25:\n            exit(\"Sorry, but this calculator can handle parameters which have absolute value below 25 :(\")\n    except ValueError:\n            exit(\"Please, enter an integer\")\n    return int(value)\ndef quadFunc(aP, bP, cP):\n    print(\"==========================================================\")\n    # Assign quadratic function its values",
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "quadFunc",
+        "kind": 2,
+        "importPath": "helpers",
+        "description": "helpers",
+        "peekOfCode": "def quadFunc(aP, bP, cP):\n    print(\"==========================================================\")\n    # Assign quadratic function its values\n    a = promptParam(aP)\n    b = promptParam(bP)\n    c = promptParam(cP)\n    a, b, c = int(a), int(b), int(c)\n    if a == 0:\n        exit(\"a parameter can not equal 0, since function may not be valid\")\n    if a > 0:",
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "linearFunc",
+        "kind": 2,
+        "importPath": "helpers",
+        "description": "helpers",
+        "peekOfCode": "def linearFunc(kP, bP):\n    print(\"==========================================================\")\n    # Define k and b\n    k = promptParam(kP)\n    b = promptParam(bP)\n    wrtK = k\n    wrtB = b\n    if True:\n        if k == 1:\n            wrtK = \"\"",
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "invFunc",
+        "kind": 2,
+        "importPath": "helpers",
+        "description": "helpers",
+        "peekOfCode": "def invFunc(kP):\n    # Define k\n    print(\"==========================================================\")\n    k = promptParam(kP)\n    x = np.arange(-10, 10, 0.1)\n    y = k/x\n    grid(-10, 10, -10, 10)\n    print(\n        f\"Function: y = {k}/x\\n==========================================================\")\n    plt.title(f\"Function: y = {k}/x\\n\\n\")",
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
+        "label": "cubicFunc",
+        "kind": 2,
+        "importPath": "helpers",
+        "description": "helpers",
+        "peekOfCode": "def cubicFunc(aP):\n    print(\"==========================================================\")\n    a = promptParam(aP)\n    x = np.arange(-10, 10, 0.1)\n    y = a*(x**3)\n    grid(-10, 10, -10, 10)\n    print(\n        f\"Function: y = {a}x³\\n==========================================================\")\n    plt.title(f\"Function: y = {a}x³\\n\\n\")\n    plt.plot(x, y)",
+        "detail": "helpers",
+        "documentation": {}
+    }
+]
