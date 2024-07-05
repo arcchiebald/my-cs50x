@@ -14,7 +14,7 @@ Throughout the course, I tackled various problem sets and projects, learning dif
 
 ## Final Project: GraphLearn 📊🐍
 
-For my final project, I developed **GraphLearn**, a powerful graph plotter written in Python. GraphLearn allows users to create, customize, and visualize various types of graphs with ease. It aims to provide a user-friendly interface for learning and experimenting with data visualization.
+For my final project, I developed first version of **GraphLearn**, a powerful graph plotter written in Python. GraphLearn allows users to create, customize, and visualize various types of graphs with ease. It aims to provide a user-friendly interface for learning and experimenting with data visualization. I certainly plan to continue this project, so stay tuned!
 
 
 Feel free to explore the projects and check out the code. Any feedback or contributions are welcome! 😊
